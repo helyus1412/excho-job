@@ -27,12 +27,5 @@ func QuestionFetch(c *gin.Context) {
 	var responseObject entity.Response
 	json.Unmarshal(responseData, &responseObject)
 
-	// fmt.Println(responseObject.ResponseCode)
-	// fmt.Println(len(responseObject.Results))
-
-	// for i := 0; i < len(responseObject.Results); i++ {
-	// 	fmt.Println(responseObject.Results[i])
-	// }
-
 	c.JSON(200, responseObject)
 }

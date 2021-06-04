@@ -98,7 +98,7 @@ func (s *service) GetJobByLocation(location string) (JobsFormat, error) {
 		return JobsFormat{}, err
 	}
 
-	if job.Location == "" {
+	if job.ID == 0 {
 		return JobsFormat{}, errors.New("job location not found")
 	}
 
