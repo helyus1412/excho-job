@@ -21,6 +21,7 @@ func main() {
 	routes.JobProfileRoute(r)
 	routes.JobSeekerProfileRoute(r)
 	routes.ApplyJobsRoute(r)
+	routes.QuestionRoute(r)
 
 	r.Run()
 }
