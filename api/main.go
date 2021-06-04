@@ -23,5 +23,6 @@ func main() {
 	routes.ApplyJobsRoute(r)
 	routes.QuestionRoute(r)
 
-	r.Run(":5555")
+	//running apps
+	r.Run()
 }
